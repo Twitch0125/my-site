@@ -33,20 +33,32 @@ const { title } = Astro.props as Props;
 		href="#experience">Skip to Experience</a>
 	<a class="focus:w-auto focus:h-auto focus:overflow-auto absolute top-0 left-0 w-0 h-0 overflow-hidden"
 		href="#education">Skip to Education</a>
-	<nav id="nav" class="bg-stone-900 py-2 mb-8 text-white">
-		<div class="container flex items-center max-w-xl px-3 mx-auto space-x-3 text-sm font-medium">
+	<nav id="nav" class="bg-stone-900 sm:py-2 py-4 mb-8 text-white">
+		<div class="sm:text-sm container flex items-center max-w-xl px-3 mx-auto space-x-6 font-medium">
 			<a class="underline-offset-4 decoration-stone-700 underline" href="/">Resume</a>
-			<a class="underline-offset-4 decoration-stone-700 underline" href="/design">Design</a>
+			<a class="underline-offset-4 decoration-stone-700 underline" href="/favorites">Favorites</a>
+			<a class="flex items-center" href="https://github.com/Twitch0125">
+				<div class="i-carbon-email mr-1 text-xl" />
+				<span class="decoration-stone-700 underline-offset-4 underline">
+					Email Me
+				</span>
+			</a>
 			<a class="flex items-center" href="https://github.com/Twitch0125">
 				<div class="i-carbon-logo-github mr-1 text-xl" />
 				<span class="decoration-stone-700 underline-offset-4 underline">
 					Github
 				</span>
 			</a>
+			<a class="flex items-center" href="https://github.com/Twitch0125">
+				<div class="i-carbon-logo-linkedin mr-1 text-xl" />
+				<span class="decoration-stone-700 underline-offset-4 underline">
+					Linked In
+				</span>
+			</a>
 		</div>
 	</nav>
 	<div class="sm:container sm:max-w-xl sm:mx-auto">
-		<section id="content" class="prose-stone px-3 prose prose-lg">
+		<section id="content" class="prose-stone sm:prose-lg px-3 prose">
 			<slot />
 		</section>
 	</div>
