@@ -6,7 +6,6 @@ import presetIcons from "@unocss/preset-icons";
 // https://astro.build/config
 export default defineConfig({
   site: "https://twitch0125.github.io",
-  base: "/my-site",
   integrations: [
     mdx(),
     tailwind(),
